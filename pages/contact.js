@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <Layout>
       <form ref={form} onSubmit={sendEmail} className="flex w-full space-x-3">
-        <div className="items-center w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white border-solid border-2 rounded-lg shadow dark:bg-gray-800">
+        <div className="items-center w-full max-w-2xl px-5 py-10 m-auto mt-6 bg-white border-solid border-2 rounded-lg shadow dark:bg-gray-800">
           <Image
             className="bg-cover rounded-md"
             src={lyonuniversity}
@@ -38,10 +38,21 @@ export default function Contact() {
               <div className=" relative ">
                 <input
                   type="text"
-                  name="name"
+                  name="lastname"
                   id="name"
                   className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent"
                   placeholder="Nom"
+                />
+              </div>
+            </div>
+            <div className="col-span-2 lg:col-span-1">
+              <div className=" relative ">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="name"
+                  className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent"
+                  placeholder="Prénom"
                 />
               </div>
             </div>
@@ -56,8 +67,20 @@ export default function Contact() {
                 />
               </div>
             </div>
+            <div className="col-span-2 lg:col-span-1">
+              <div className=" relative ">
+                <input
+                  type="text"
+                  name="object"
+                  id="name"
+                  className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent"
+                  placeholder="Sujet"
+                />
+              </div>
+            </div>
+            
             <div className="col-span-2">
-              <label className="text-gray-700" for="name">
+              <label className="text-gray-700">
                 <textarea
                   className="flex-1 appearance-none border border-gray-400 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent"
                   id="comment"

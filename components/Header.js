@@ -4,25 +4,25 @@ import styles from "../styles/Home.module.css";
 
 export default function Header({ name }) {
     return (
-        <div className="headerdiv bg-gray-200">
-            <ul className="w-full flex h-10">
-                <li className="text-black">
+        <div className="headerdiv bg-gray-200 w-full justify-end">
+            <ul className="w-full flex h-12 justify-end">
+                <li className="text-black m-2 mt-3">
                     <Link href="/">
-                        <a className="" layout="responsive">
+                        <a className="hover:text-white  uppercase" layout="responsive">
                             Accueil
                         </a>
                     </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-black m-2 mt-3">
                     <Link href="/projects">
-                        <a className="" layout="responsive">
-                            Mes projects
+                        <a className="hover:text-white uppercase" layout="responsive">
+                            Mes projets
                         </a>
                     </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-black m-2 mt-3 mr-6">
                     <Link href="/contact">
-                        <a className="" layout="responsive">
+                        <a className="hover:text-white uppercase" layout="responsive">
                             Contact
                         </a>
                     </Link>

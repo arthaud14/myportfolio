@@ -10,9 +10,9 @@ import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-gray-100">
+    <footer className="fixed bottom-0 left-0 w-full bg-gray-200">
       <div className="max-w-screen-xl mx-auto px-4 h-10">
-        <ul className="w-full flex justify-center items-center mt-4">
+        <ul className="w-full h-full flex justify-center items-center">
           <li>
             <a className="p-5" href="https://www.linkedin.com/in/arthaud-primevert-56b225108/">
               <FontAwesomeIcon icon={faLinkedin} size="2x"/>
@@ -28,7 +28,9 @@ export default function Footer() {
             <FontAwesomeIcon icon={faFlickr} size="2x"/>
             </a>
           </li>
+          <div className="flex items-center text-sm text-center dark:text-gray-50">2022 Copyright - Arthaud PRIMEVERT</div>
         </ul>
+        
       </div>
     </footer>
   );
