@@ -1,0 +1,31 @@
+{
+    "short_name": "MyPortfolio",
+    "name": "Portfolio of Arthaud PRIMEVERT",
+    "description": "NextJS app with offline support",
+    "lang": "fr-FR",
+    "icons": [
+        {
+            "src": "img/icon-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+            
+        },
+        {
+            "src": "img/icon-256.png",
+            "type": "image/png",
+            "sizes": "256x256",
+            "purpose": "maskable"
+
+        },
+        {
+            "src": "img/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+            
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "theme_color": "#FFFFFF"
+}
